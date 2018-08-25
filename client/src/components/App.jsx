@@ -1,19 +1,25 @@
 import React from 'react';
 import axios from 'axios';
 import styles from '../css/App.css';
-import PostureList from './PostureList.jsx';
+import InputDetails from './InputDetails.jsx';
+import Options from './Options.jsx';
+import Schedule from './Schedule.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
   }
+  ComponentDidMount () {
 
+  }
   render () {
     return (
       <div className={styles.app}>
         Render Something
-        Yoga-T to Try out this App!
-        <PostureList/>
+        
+        <InputDetails/>
+        <Options/>
+        <Schedule/>
       </div>
     );
   }
